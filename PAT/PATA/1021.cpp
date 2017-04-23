@@ -67,7 +67,7 @@ void bfs( int s )
 		{
 			Edge e = edges[ G[u][i] ] ;
 			if( a[e.to] ) continue ;
-			q.push(e.to) ; a[e.to] = 1 ;
+			q.push(e.to) ; a[e.to] = 1 ;	
 			dp[e.to] = dp[u] + 1 ;
 			deepth[s] = deepth[s] > dp[e.to] ? deepth[s] : dp[e.to] ;	//更新最大深度
 		}
