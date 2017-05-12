@@ -26,7 +26,7 @@ public:
         for (auto i : numbers) {
             if (i == ans) ++cnt;
         }
-        return cnt > numbers.size() ? ans : 0;
+        return cnt > numbers.size()/2 ? ans : 0;
     }
 };
 
